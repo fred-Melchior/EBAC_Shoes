@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgba(44, 79, 204, 1);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 8px 25%;
+}
+
+header h1{
+    font-style: italic;
+    background-color: transparent;
+}
+
+header div{
+    background-color: transparent;
+}
+
+header div a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 8px;
+    background-color: transparent;
+}
+
+section{
+    padding: 0 25%;
+}
+
+h2{
+    color: rgba(44, 79, 204, 1);
+    padding: 4px;
+    border-bottom: 4px solid rgba(44, 79, 204, 1);
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+#sobre{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+#sobre img{
+    width: 50%;
+    height: 30%;
+    margin-right: 32px;
+    padding-top: 10px;
+}
+
+.produtos ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 8px;
+    margin: 0 4px;
+}
+
+.produtos ul li{
+    max-width: 25%;
+    margin: 0 8px;
+}
+
+.produtos img{
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.produtos ul li img:hover{
+    border: 2px solid black;
+    width: 120%;
+    overflow: visible;
+    position: relative;
+}
+
+.produtos h3{
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.produtos p{
+    margin: 16px 0;
+}
+
+.produtos li button{
+    background-color: rgba(44, 79, 204, 1);
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.produtos li button:hover{
+    padding: 16px 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media screen and (max-width: 640px) {
+    html{
+        max-width: 425px;
+    }
+    
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        padding: 5%;
+        flex-wrap: wrap;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    header a{
+        font-size: 1em;
+    }
+
+    section{
+        padding: 0 5%;
+    }
+
+    #sobre{
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    #sobre img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 8px;
+        padding-top: 5px;
+    }
+
+    .produtos ul{
+        display: block;
+        list-style: none;
+        width: 100%;
+        padding: 1%;
+    }
+
+    .produtos ul li{
+        max-width: 100%;
+        height: 100%;
+        margin: 0 8px;
+        text-align: center;
+    }
+
+    .produtos ul li img{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .produtos ul h3{
+        font-size: 24px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .produtos button{
+        font-size: 20px;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    body{
+        min-width: 641px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header{
+        padding: 16px 10%;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    header a{
+        font-size: 1.5em;
+    }
+
+    section{
+        padding: 0 10%;
+    }
+
+    #sobre{
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    #sobre img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 16px;
+        padding-top: 10px;
+    }
+
+    .produtos ul{
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        list-style: none;
+        width: 100%;
+        padding: 1%;
+    }
+
+    .produtos ul li{
+        max-width: 100%;
+        height: 100%;
+        margin: 0 8px;
+    }
+
+    .produtos ul li img{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .produtos ul h3{
+        font-size: 24px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .produtos button{
+        font-size: 24px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+}
